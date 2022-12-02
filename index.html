@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto+Mono:wght@300&family=Rubik+Microbe&display=swap" rel="stylesheet">
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>prototipo-1</title>
 </head>
 <style>
-	
-	.heading{position:absolute;top:0px;left:0px;height:35%;width:100%;background:grey;margin:0%;text-align:center;}
-		h1{font-size:80px;margin:0%}
-		.tabbar{position:absolute;top:70%;height:20px;width:100%;}
-			a{font-size:20px;text-decoration:none;color:white}
 
-	.catalogue{position:absolute;top:35%;left:0%;height:1000px;width:100%;}
-		.cards{position:absolute;height:320px;width:250px;border-radius:20px;background:black;}
-		img{position:absolute;top:25px;left:25px;height:210px;width:200px;}
-		.cards-name{position:absolute;top:235px;left:25px;color:white}
-		.cards-price{position:absolute;top:235px;left:195px;color:white}
-		.cards-size{position:absolute;top:255px;left:25px;color:white}
-		
+	.heading{position:absolute;top:0px;left:0px;height:40%;width:100%;background:black;margin:0%;text-align:center;}
+		h1{font-size:80px;margin:0%;color:white;font-family: 'Rubik Microbe', cursive;}
+		.tabbar{position:absolute;top:70%;height:20px;width:100%;}
+			a{font-size:35px;text-decoration:none;color:white;background:black;height:40px;width:160px;font-family: 'Reenie Beanie', cursive;}
+			a:hover{background:white;color:black;}
+
+	.catalogue{position:absolute;top:40%;left:0%;height:1000px;width:100%;}
+		.cards{position:absolute;height:31%;width:20.5%;border-radius:0px;background:black;}
+		.cards:hover{background:white;color: black;}
+		img{position:absolute;top:10%;left:10%;height:70%;width:80%;}
+		.cards-name{position:absolute;top:235px;left:25px;color:white;font-family: 'Roboto Mono', monospace;}
+		.cards-price{position:absolute;top:235px;left:75%;color:white;font-family: 'Roboto Mono', monospace;}
+		.cards-size{position:absolute;top:255px;left:25px;color:white;font-family: 'Roboto Mono', monospace;}
+
+		.cards-name:hover{color:black;}
+		.cards-price:hover{color:black}
+	.cards-smartphone{
+		display: none;
+	}
+
+	@media (max-width:900px) {
+		.heading{position:absolute;top:0px;left:0px;height:40%;width:100%;background:black;margin:0%;text-align:center;}
+			h1{font-size:60px;margin:0%;color: white;}
+			.tabbar{position:absolute;top:70%;height:20px;width:100%;}
+				a{font-size:30px;text-decoration:none;color:white;background:black;height:35px;width:150px;font-family: 'Reenie Beanie', cursive;}
+				a:hover{background:white;color:black;}
+
+		.catalogue{position:absolute;top:40%;left:0%;height:1000px;width:100%;}
+			.cards-smartphone{display:block;;position:absolute;height:35%;width:80%;border-radius:0px;background:black;}
+			img{position:absolute;top:10%;left:10%;height:70%;width:80%;}
+			.cards-name{position:absolute;top:280px;left:25px;color:white}
+			.cards-price{position:absolute;top:280px;left:195px;color:white}
+			.cards-size{position:absolute;top:295px;left:25px;color:white}
+
+		.cards{display: none}
+
+	}
 
 
 </style>
@@ -26,31 +55,68 @@
 <div class="heading">
 	<br><h1>Negozio</h1>
 	<div class="tabbar">
-		<a style="position:absolute;left:30%;" href="catalogue">catalogo</a><a href="home">home</a><a style="position:absolute;right:30%;" href="contats">contatti</a>  
-	</div> 
+		<a style="position:absolute;left:10%" href="catalogue">catalogo</a><a style="position:absolute;right:10%;" href="contats">contatti</a>
+	</div>
 </div>
+
 <div class="catalogue">
-	<div style="top:80px;left:80px"class="cards">
+	<div style="top:80px;left:5%"class="cards">
 		<img  src="xx">
 		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
 		<p class="cards-size">Taglia: S</p>
 	</div>
-	<div style="top:80px;left:360px"class="cards">
+	<div style="top:80px;left:28%"class="cards">
 		<img  src="xx">
 		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
 		<p class="cards-size">Taglia: S</p>
 	</div>
-	<div style="top:80px;left:640px"class="cards">
+	<div style="top:80px;right:28%"class="cards">
 		<img  src="xx">
 		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
 		<p class="cards-size">Taglia: S</p>
 	</div>
-	<div style="top:80px;left:920px"class="cards">
+	<div style="top:80px;right:5%"class="cards">
 		<img  src="xx">
 		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
 		<p class="cards-size">Taglia: S</p>
 	</div>
 
+	<div style="top:48%;left:5%"class="cards">
+		<img  src="xx">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+	<div style="top:48%;left:28%"class="cards">
+		<img  src="xx">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+	<div style="top:48%;right:28%"class="cards">
+		<img  src="xx">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+	<div style="top:48%;right:5%"class="cards">
+		<img  src="xx">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+
+
+
+
+	<div style="top:80px;left:9%"class="cards-smartphone">
+		<img  src="xx">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+	<div style="top:50%;left:9%"class="cards-smartphone">
+		<img  src="xx">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+
+	<!--
 	<div style="top:430px;left:80px"class="cards">
 		<img  src="xx">
 		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
@@ -71,6 +137,7 @@
 		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
 		<p class="cards-size">Taglia: S</p>
 	</div>
+-->
 </div>
 </body>
 </html>
