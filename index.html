@@ -28,10 +28,15 @@
 			.cards-size{position:absolute;top:260px;left:10%;font-size:90%;color:white;font-family:'Roboto Mono',monospace;}
 
 
-	.contacts {position:absolute;top:1400px;left:0%;height:50%;width:100%;}
-		.contacts-number{height:100%;width:50%;background:black;color: white; text-align: center;}
-		.contacts-map{position:absolute;top:0px;right:0%;height:100%;width:50%;background:black;}
-			iframe{height:100%;width:100%}
+	/*.contacts {position:absolute;top:1400px;left:0%;height:50%;width:40%;}*/
+	.contacts-number{position:absolute;top:2400px;height:50%;width:50%;background:black;color: white; text-align: center;}
+		.intro{margin:0px;font-size:60px;font-family:'Reenie Beanie',cursive;}
+		li{font-size:20px;font-family:'Roboto Mono',monospace;text-align:left;font-weight:bold; text-decoration:none;}
+	.contacts-map{position:absolute;top:2400px;right:0%;height:50%;width:50%;background:black;}
+		iframe{height:100%;width:100%}
+
+
+
 
 	.cards-smartphone{display: none;}
 	.cards-smartphone-horizzontal{display:none;}
@@ -41,7 +46,7 @@
 
 
 
-	@media (max-width:980px) {
+	@media (max-width:1000px) {
 		.heading{position:absolute;top:0px;left:0px;height:50%;width:100%;background:black;margin:0%;text-align:center;}
 			h1{font-size:60px;margin:0%;color: white;}
 			.tabbar{position:absolute;top:70%;height:20px;width:100%;}
@@ -56,13 +61,16 @@
 			.cards-price{position:absolute;top:82%;left:80%;font-size:90%;color:white;font-family:'Roboto Mono',monospace;}
 			.cards-size{position:absolute;top:82%;left:10%;font-size:90%;color:white;font-family:'Roboto Mono',monospace;}
 
+		.contacts-number{position:absolute;top:2400px;height:40%;width:100%;background:black;color: white; text-align: center;} 
+		.contacts-map{position:absolute;top:2660px;right:0%;height:50%;width:100%;background:black;}
+			iframe{height:100%;width:100%}
 
 		.cards{display: none}
 		.cards-smartphone{display: none}
 
 
 	}
-	@media (max-width:480px) {
+	@media (max-width:500px) {
 		.heading{position:absolute;top:0px;left:0px;height:40%;width:100%;background:black;margin:0%;text-align:center;}
 			h1{font-size:60px;margin:0%;color: white;}
 			.tabbar{position:absolute;top:70%;height:20px;width:100%;}
@@ -89,11 +97,12 @@
 <div class="heading">
 	<br><h1>Fashion</h1>
 	<div class="tabbar">
-		<a style="position:absolute;left:10%" href="catalogue">catalogo</a><a style="position:absolute;right:10%;" href="contats">contatti</a>
+		<a style="position:absolute;left:10%" href="#catalogue">catalogo</a><a style="position:absolute;right:10%;" href="#contacts-number">contatti</a>
 	</div>
 </div>
 
 <div class="catalogue">
+	<a name="catalogue"></a>
 	<div style="top:80px;left:5%"class="cards">
 		<img  src="src/maglione-bianco.jpg">
 		<p class="cards-name">Maglione bianco</p>
@@ -137,6 +146,20 @@
 		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
 		<p class="cards-size">Taglia: S</p>
 	</div>
+	<div style="top:88%;left:9%"class="cards-smartphone">
+		<img  src="src/maglione-bianco.jpg">
+
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+
+
+	<div style="top:48%;left:9%"class="cards-smartphone">
+		<img  src="src/maglione-bianco.jpg">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+
 
 
 	<div style="top:80px;left:9%"class="cards-smartphone-horizzontal">
@@ -146,15 +169,27 @@
 	</div>
 	<div style="top:80px;right:9%"class="cards-smartphone-horizzontal">
 		<img  src="src/maglione-bianco.jpg">
-
 		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
 		<p class="cards-size">Taglia: S</p>
 	</div>
+	<div style="top:50%;left:9%"class="cards-smartphone-horizzontal">
+		<img  src="src/maglione-bianco.jpg">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+
+	<div style="top:50%;right:9%"class="cards-smartphone-horizzontal">
+		<img  src="src/maglione-bianco.jpg">
+		<p class="cards-name">Maglione bianco</p><p class="cards-price">20€</p>
+		<p class="cards-size">Taglia: S</p>
+	</div>
+
 </div>
 	
-<div class="contacts">
+	
 	<div class="contacts-number">
-		
+		<a name="contacts-number"></a>
+		<p class="intro"> Contatti </p>
 		<ul>
 		  <li>n. di telefono: 366 2434241</li>
 		  <li>telegram: @taldeitali </li>
@@ -163,7 +198,6 @@
 
 	</div>
 	<div class="contacts-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11176.782582173224!2d9.31262030781249!3d45.5463897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786b7bd852fad7f%3A0x3bf1cd458b20b27!2sElena%20Mir%C3%B2!5e0!3m2!1sit!2sit!4v1670069489728!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-</div>
 
 
 </body>
