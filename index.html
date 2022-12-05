@@ -18,8 +18,8 @@
 		.tabbar{position:absolute;top:70%;height:35px;width:100%;}
 			a{font-size:35px;text-decoration:none;color:white;background:black;height:40px;width:160px;font-family:'Reenie Beanie',cursive;} a:hover{background:white;color:black;}
 
-
-	.catalogue{position:absolute;top:40%;left:0%;height:1000px;width:100%;}
+	.background{position:absolute;top:40%;left:0%;height:2475px;width:100%;}
+	.catalogue{position:absolute;top:40%;left:0%;height:1400px;width:100%;}
 		.cards{position:absolute;height:31%;width:20.5%;background:black;}
 			img{position:absolute;top:10%;left:10%;height:70%;width:80%;}
 
@@ -42,7 +42,26 @@
 	.cards-smartphone-horizzontal{display:none;}
 
 
+	@media (max-width:1300px){
+	.heading{position:absolute;top:0px;left:0px;height:40%;width:100%;background:black;margin:0px;text-align:center;}
+		h1{font-size:80px;margin:0px;color:white;font-family: 'Rubik Microbe', cursive;}
+		.tabbar{position:absolute;top:70%;height:35px;width:100%;}
+			a{font-size:35px;text-decoration:none;color:white;background:black;height:40px;width:160px;font-family:'Reenie Beanie',cursive;} a:hover{background:white;color:black;}
 
+
+	.catalogue{position:absolute;top:40%;left:0%;height:1000px;width:100%;}
+		.cards{position:absolute;height:31%;width:20.5%;background:black;}
+			img{position:absolute;top:10%;left:10%;height:70%;width:80%;}
+
+			.cards-name{position:absolute;top:240px;left:10%;font-size:85%;color:white;font-family:'Roboto Mono',monospace;}
+			.cards-price{position:absolute;top:260px;left:75%;font-size:90%;color:white;font-family:'Roboto Mono',monospace;}
+			.cards-size{position:absolute;top:260px;left:10%;font-size:90%;color:white;font-family:'Roboto Mono',monospace;}
+
+
+	.cards-smartphone{display: none;}
+	.cards-smartphone-horizzontal{display:none;}
+
+	}
 
 
 
@@ -67,6 +86,7 @@
 
 		.cards{display: none}
 		.cards-smartphone{display: none}
+
 
 
 	}
@@ -101,6 +121,7 @@
 	</div>
 </div>
 
+<img src="src/background.jpg" class="background"> 
 <div class="catalogue">
 	<a name="catalogue"></a>
 	<div style="top:80px;left:5%"class="cards">
