@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Rajdhani&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<style type="text/css">
+	*{margin:0;padding:0;box-sizing:border-box;}
+
+	.background{min-height:500px;width:100%}
+	.header{position:absolute;top:0;display:flex;flex-direction:row;}
+		.header-item {flex-basis:50%;padding:50px;text-align:center;}
+			h1{font-family:'Princess Sofia',cursive;font-size:80px;}
+			p {font-family: 'Rajdhani', sans-serif;font-size:20px;text-align:justify;}
+			a {font-family: 'Roboto Mono',cursive;background:white;color:black;font-weight:bold;opacity:50%}
+			a:hover{font-family: 'Roboto Mono',cursive;background:white;color:black;font-weight:bold;opacity:100%}
+
+			.heading-carosello{margin-top:15%;height:80%;width:70%;}
+
+				.cards-name-offerts{position:absolute;top:75%;left:62%;opacity:100%}
+				.cards-name-offerts:hover{position:absolute;top:75%;left:62%;opacity:100%}
+				.cards-price-offerts{position:absolute;top:80%;right:15%;opacity:	%}
+				.cards-price-offerts:hover{position:absolute;top:80%;right:15%;opacity:100%}
+				.cards-size-offerts{position:absolute;top:80%;left:62%;opacity:100%}
+				.cards-size-offerts:hover{position:absolute;top:80%;left:62%;opacity:100%}
+
+
+
+	.catalogo{display:flex;justify-content:center;flex-wrap:wrap;}
+		.catalogo-item{flex-basis:20%;margin-top:20px;padding:40px;top:70%;}
+
+
+	@media (max-width:850px){
+		.background{min-height:770px;width:100%}
+		.header{position:absolute;top:0;display:flex;flex-direction:column;}
+			.header-item {flex-basis:50%;padding:10px;text-align:center;}
+				h1{font-family:'Princess Sofia',cursive;font-size:60px;}
+				p {font-family: 'Rajdhani', sans-serif;font-size:20px;text-align:justify;padding:20px}
+				a {font-family: 'Roboto Mono',cursive;background:white;color:black;font-weight:bold;opacity:50%}
+				a:hover{font-family: 'Roboto Mono',cursive;background:white;color:black;font-weight:bold;opacity:100%}
+
+				.heading-carosello{margin-top:5%;height:80%;width:40%;}
+					.cards-name-offerts{position:absolute;top:75%;left:30%;}
+					.cards-name-offerts:hover{position:absolute;top:75%;left:30%;}
+					.cards-price-offerts{position:absolute;top:80%;right:35%;opacity:5%}
+					
+					.cards-size-offerts{position:absolute;top:80%;left:62%;opacity:5%}
+
+		.catalogo{display:flex;justify-content:center;flex-wrap:wrap;}
+			.catalogo-item{flex-basis:20%;margin-top:40px;padding:40px}
+	
+	}
+	@media (max-width:450px){
+		.background{min-height:800px;width:100%}
+		.header{position:absolute;top:0;display:flex;flex-direction:column;}
+			.header-item {flex-basis:50%;padding:10px;text-align:center;}
+				h1{font-family:'Princess Sofia',cursive;font-size:60px;}
+				p {font-family: 'Rajdhani', sans-serif;font-size:20px;text-align:justify;padding:20px}
+				a {font-family: 'Roboto Mono',cursive;background:white;color:black;font-weight:bold;opacity:50%}
+				a:hover{font-family: 'Roboto Mono',cursive;background:white;color:black;font-weight:bold;opacity:100%}
+
+				.heading-carosello{margin-top:10%;height:80%;width:60%;}
+
+		.catalogo{display:flex;justify-content:center;flex-wrap:wrap;}
+			.catalogo-item{flex-basis:5%;margin-top:40px;padding:40px}
+	
+	}
+
+
+
+
+</style>
+<body>
+<img class="background" src="src/background-header.jpg">
+<div class="header">
+	<div class="header-item">
+		<h1>Wear the style</h1><br>
+		
+		<p>noi ti facciamo indossare lo stile, quello vero. Offriamo da anni capi dei migliori marchi ai migliori prezzi da sempre. Visita il nostro <a href="#catalogo">catalogo!</a> e sicuramente ti interesserà qualche capo, <a href="#contatti">contattici</a>.
+
+	</div>
+	<div class="header-item">
+		<img class="heading-carosello" src="src/maglietta-champion.jpg">
+		<p class="cards-name-offerts">Sciarpa invernale</p><p class="cards-price-offerts">10€</p>
+		<p class="cards-size-offerts">Taglia: M</p>
+
+	</div>
+</div>
+<div class="catalogo">
+	<div class="catalogo-item">
+		<img  src="src/sciarpa-invernale.jpg">
+		<p class="cards-name">Sciarpa invernale</p><p class="cards-price">10€</p>
+		<p class="cards-size">Taglia: M</p>
+	</div>
+	<div class="catalogo-item">
+		<img  src="src/sciarpa-invernale.jpg">
+		<p class="cards-name">Sciarpa invernale</p><p class="cards-price">10€</p>
+		<p class="cards-size">Taglia: M</p>
+	</div>
+	<div class="catalogo-item">
+		<img  src="src/sciarpa-invernale.jpg">
+		<p class="cards-name">Sciarpa invernale</p><p class="cards-price">10€</p>
+		<p class="cards-size">Taglia: M</p>
+	</div>
+	<div class="catalogo-item">
+		<img  src="src/sciarpa-invernale.jpg">
+		<p class="cards-name">Sciarpa invernale</p><p class="cards-price">10€</p>
+		<p class="cards-size">Taglia: M</p>
+	</div>
+	<div class="catalogo-item">
+		<img  src="src/sciarpa-invernale.jpg">
+		<p class="cards-name">Sciarpa invernale</p><p class="cards-price">10€</p>
+		<p class="cards-size">Taglia: M</p>
+	</div>
+	<div class="catalogo-item">
+		<img  src="src/sciarpa-invernale.jpg">
+		<p class="cards-name">Sciarpa invernale</p><p class="cards-price">10€</p>
+		<p class="cards-size">Taglia: M</p>
+	</div>
+
+
+
+
+</body>
+</html>
